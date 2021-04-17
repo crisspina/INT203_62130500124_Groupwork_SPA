@@ -1,5 +1,10 @@
 <template>
-  <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
+  <div class="border rounded-lg bg-white mx-20 py-8">
     <slot></slot>
     </div>
 </template>
+<script>
+export default {
+  name: "box",
+};
+</script>
