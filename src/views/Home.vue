@@ -47,13 +47,11 @@
 </template>
 
 <script>
-import About from "@/components/About.vue";
 import News from "@/components/News.vue";
 
 export default {
   name: "Home",
   components: {
-    About,
     News,
   },
   data() {

@@ -1,6 +1,6 @@
 <template>
     <h1>The event4</h1>
-    <div class="border rounded-lg bg-white mx-20 py-8">
+    <box>
       <h1 class="text-green-darkgreen text-3xl font-bold">Contact Us</h1>
       <div class="text-green-darkgreen font-bold">
         Contact to send information for public relations
@@ -12,13 +12,20 @@
       </h1>
       <p>Tel : 099-7899964</p>
       <p>Email : natchaphannoi@gmail.com</p>
-    </div>
-
+      <div class="flex">
+       
+      </div>
+    </box>
+<About> </About>
 </template>
 <script>
+import box from "@/components/ModelBlock.vue";
+
 export default {
   name: "Contact",
-  components: {},
+  components: {
+    box
+  },
 };
 </script>
 

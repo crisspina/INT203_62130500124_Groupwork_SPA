@@ -28,7 +28,8 @@
       <!-- submit but -->
       <div class="pt-2 pl-5 mx-48">
         <button
-          class="focus:outline-none btn text-sm bg-green-darkgreen text-white rounded-2xl shadow px-3 py-2 my-1">
+          class="focus:outline-none btn text-sm bg-green-darkgreen text-white rounded-2xl shadow px-3 py-2 my-1"
+        >
           submit
         </button>
       </div>
@@ -68,7 +69,8 @@
           <!-- edit -->
           <form @submit="editSubmit(result)" v-if="isEdit">
             <h2
-              class="text-red-900 text-center text-lg font-extrabold pb-2 py-5">
+              class="text-red-900 text-center text-lg font-extrabold pb-2 py-5"
+            >
               Edit Event
             </h2>
             <label class="text-red-900 font-semibold" for="title"> </label>
@@ -105,6 +107,7 @@
       </div>
     </div>
   </div>
+  <About> </About>
 </template>
 
 <script>
@@ -146,29 +149,27 @@ export default {
     //   this.enteredTitle = "";
     //   this.enteredDescription = "";
     // },
-    async addEvent(){
-        const newEvent = {
-           title: this.enteredTitle,
-           description: this.enteredDescription
-        }
-        const res = await fetch(this.url,{
-          method: 'POST',
-          headers:{
-            'Content-type': 'application/json'
-          },
-          body: JSON.stringify({
-            title: newEvent.title,
-            description: newEvent.description
-            
-          })
-        })
-        const data = await res.json()
-        this.AddEventShow = [...this.AddEventShow,data]
-        this.enteredTitle = ''
-        this.enteredDescription = ''
-    
-      },
-
+    async addEvent() {
+      const newEvent = {
+        title: this.enteredTitle,
+        description: this.enteredDescription,
+      };
+      const res = await fetch(this.url, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          title: newEvent.title,
+          description: newEvent.description,
+        }),
+      });
+      const data = await res.json();
+      this.AddEventShow = [...this.AddEventShow, data];
+      this.enteredTitle = "";
+      this.enteredDescription = "";
+    },
+    //2
     async fetchAddEventShow() {
       const res = await fetch(this.url);
       const data = await res.json();
@@ -187,33 +188,34 @@ export default {
           : alert("Error to delete feedback");
       }
     },
-      editSurvey() {
-        this.isEdit = true;
-      },
-      async editSubmit(editingData) {
-        const res = await fetch(`${this.url}/${editingData.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({
-            title: this.oldTitle,
-            description: this.oldDescription,
-          }),
-        });
-        const data = await res.json();
-        this.AddEventShow = this.AddEventShow.map((survey) =>
-          survey.id === data.id
-            ? {
-                ...survey,
-                title: data.title,
-                description: data.description,
-              }
-            : survey
-        );
-        (this.isEdit = false), (this.oldTitle = ""), (this.oldDescription = "");
-      },
+    editSurvey() {
+      this.isEdit = true;
+    },
+    async editSubmit(editingData) {
+      const res = await fetch(`${this.url}/${editingData.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          title: this.oldTitle,
+          description: this.oldDescription,
+        }),
+      });
+      const data = await res.json();
+      this.AddEventShow = this.AddEventShow.map((survey) =>
+        survey.id === data.id
+          ? {
+              ...survey,
+              title: data.title,
+              description: data.description,
+            }
+          : survey
+      );
+      (this.isEdit = false), (this.oldTitle = ""), (this.oldDescription = "");
+    },
   },
+  //1
   async created() {
     this.AddEventShow = await this.fetchAddEventShow();
   },
