@@ -1,9 +1,11 @@
 <template>
-  <div id="nav" class="flex border bg-brown-dark py-3 pr-3 pl-10">
-    <router-link to="/">Home</router-link> |  
-    <router-link to="/event">Event</router-link> |  
-    <router-link to="/contact">Contact Us</router-link> |   
-  </div>
+  <div id="nav" class="rounded-b-2xl flex border font-bold text-lg text-white active:text-green-darkgreen divide-x-2 bg-brown-dark py-3 pr-3 pl-10">
+    <div> 
+    <router-link to="/" class="px-3" >Home</router-link> 
+    <router-link to="/event" class=" px-3">Event</router-link> 
+    <router-link to="/contact" class="px-3" >Contact Us</router-link> 
+    </div>
+    </div>
   <router-view />
 </template>
 
@@ -38,6 +40,6 @@ body {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
 }
 </style>
