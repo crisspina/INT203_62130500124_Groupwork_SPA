@@ -17,10 +17,13 @@
       </div>
     </box>
 <About> </About>
+  <footer>
+    <span class="footer">Created By <span class="create"> criss </span> 2020 All rights reserved.</span>
+  </footer>
 </template>
+
 <script>
 import box from "@/components/ModelBlock.vue";
-
 export default {
   name: "Contact",
   components: {
@@ -30,6 +33,7 @@ export default {
 </script>
 <style scoped>
 
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .logo {
   font-family: 'Dancing Script' ;
@@ -37,7 +41,13 @@ export default {
   color: #6b705c;
   font-weight: 600 ;
 }
+.create {
+  font-weight: 600 ;
+}
 
+.footer {
+font-family: 'Open Sans';
+}
 </style>
 
 

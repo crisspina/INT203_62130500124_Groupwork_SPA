@@ -22,12 +22,12 @@
       <div class="bg-cream-light border-solid border-opacity-75 rounded-lg mx-20 mt-4">
         <div class="flex-initial grid grid-rows p-5  ">
           <div class="list" v-for="result in AddEventShow" :key="result.id">
-            <div class="bg-brown-light rounded-2xl p-5 my-2">
-                <p class="pb-2">
+            <div class="bg-brown-light rounded-2xl p-5 my-2 ">
+                <p class="pb-2 text-left">
                   <span class="font-black text-green-darkgreen "> Title:</span>
                   {{ result.title }}<br />
-                  <span class="font-black text-green-darkgreen "> Description: </span
-                  >{{ result.description }}<br />
+                  <span class="font-black text-green-darkgreen"  > Description: </span
+                  ><span style="white-space: pre-wrap;">{{ result.description }} </span><br />
                 </p>
             </div>
           </div>
@@ -74,7 +74,6 @@ export default {
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 .logo {
@@ -86,13 +85,11 @@ export default {
 }
 
 .create {
-font-family: 'Open Sans';
   font-weight: 600 ;
 }
 
 .footer {
 font-family: 'Open Sans';
-
 }
 
 </style>

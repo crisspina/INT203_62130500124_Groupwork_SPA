@@ -12,7 +12,7 @@
         <label class="" for="title"> Title:</label>
         <input
           class="text-black rounded-lg text-sm focus:outline-none py-0.5 w-80 pl-3 "
-          cols=""
+         
           id="title"
           type="text"
           v-model="enteredTitle"
@@ -43,10 +43,10 @@
 
 
     <div
-      class="container grid lg:grid-cols-3 sm:grid-cols-1 item-center my-6 mx-auto px-4 pt-10"
+      class="container  flex flex-col item-center my-6 mx-auto px-4 pt-10"
     >
       <div class="list" v-for="result in AddEventShow" :key="result.id">
-        <div class="bg-gray-50 rounded-2xl p-5 mx-10 lg:w-80 mt-5 item-start">
+        <div class="bg-gray-50 rounded-2xl p-5 mx-10 w-auto mt-5 item-start">
           <div class="text-gray-900">
             <h2 class="text-center pb-2 text-brown-dark text-lg font-extrabold "> Event </h2>
             <h3 class=""></h3>
@@ -54,7 +54,7 @@
               <span class="font-black text-green-darkgreen  "> Title: </span>
               {{ result.title }}<br />
               <span class="font-black text-green-darkgreen "> Description: <br /> </span> 
-              {{ result.description }} 
+             <span style="white-space: pre-wrap;">{{ result.description }} </span>
             </p>
             <button
               class="focus:outline-none font-semibold text-brown-dark hover:text-white hover:bg-brown-dark border-2 border-brown-dark rounded-full w-20 h-7 mr-10"
@@ -112,6 +112,10 @@
     </div>
   </div>
   <About> </About>
+  
+  <footer>
+    <span class="footer">Created By <span class="create"> criss </span> 2020 All rights reserved.</span>
+  </footer>
 </template>
 
 <script>
@@ -214,6 +218,14 @@ export default {
   font-size: 70px;
   color: #6b705c;
   font-weight: 600 ;
+}
+
+.create {
+  font-weight: 600 ;
+}
+
+.footer {
+font-family: 'Open Sans';
 }
 </style>
 

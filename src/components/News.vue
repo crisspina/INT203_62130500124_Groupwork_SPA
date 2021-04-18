@@ -5,37 +5,43 @@
     <div class=" flex-initial grid grid-cols-4">
       <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
         <div class="font-bold text-left text-sm">
-          Jonah Marais & Daniel Seavey Speak On The Future Of The Band, New
-          Music
+          IU celebrates exceeding 20 million followers on Instagram
         </div>
         <div class="text-left">
-          SO I know we don’t really post any candid stuff, but since Daniel and
-          Jonah decided to talk to the paparazzi and since we haven’t seen them
-          in what feels like forever (haha) I decided to post it. Enjoy!
+          IU is continuing to prove her international star power!
+On April 18 KST, the actress and solo artist officially surpassed 20 million followers on her personal Instagram account. To celebrate the major milestone, IU made an Instagram Story post, circling the number of followers and writing, "20 million people are watching me."
         </div>
       </div>
       <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
         <div class="font-bold text-left text-sm">
-          New Music of King.
+          SF9's Jaeyoon and Zuho release duet 'Must Be Spring or Fall'
         </div>
         <div class="text-left">
-          Suppose end get boy warrant general natural. Delightful met sufficient projection ask. Decisively everything principles if preference do impression of. Preserved oh so difficult repulsive on in household. In what do miss time be. 
+          NEWS Posted by jennywill   4 hours ago
+SF9's Jaeyoon and Zuho release duet 'Must Be Spring or Fall'
+AKP STAFF
+SF9's Zuho and Jaeyoon have released a special present for fans.
+Zuho has dropped "Must Be Spring or Fall" onto his SoundCloud account, and the song is a duet with fellow member Jaeyoon. The song talks about missing someone, and comparing their love to spring or fall - in other words, getting warm, or getting cold. Zuho's rap matches perfectly with Jaeyoon's honey vocals.
+
+
         </div>
       </div>
       <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
         <div class="font-bold text-left text-sm">
-          New Composes.
+          Hongki's first schedule after military discharge to be 'V Live' session with fans
         </div>
         <div class="text-left">
-          Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it.
+          Hongki is meeting his fans first and foremost.
+He was recently discharged from mandatory military service after enlisting as an active duty soldier in September of 2019. As of today, the F.T. Island vocalist has become the first member of his band to complete his mandatory service duties. Fellow members Jaejin and Minhwan both enlisted back in 2020, and will be returning from their duties accordingly.
+
         </div>
       </div>
       <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
         <div class="font-bold text-left text-sm">
-          Wishing -babe
+          Netizens think Kim Se Jung went overboard with her 'friendly' comments on Yoo Ji Sung's Instagram
         </div>
         <div class="text-left">
-          Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income.
+          Solo artist Kim Se Jung is well-known by her fans for her ability to make friends where ever she goes. She's also very active on Instagram, showcasing her friendship with both male and female stars without paying mind to others. 
         </div>
       </div>
     </div>
