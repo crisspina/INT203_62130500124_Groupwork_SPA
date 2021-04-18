@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import Event from '../views/Event'
 
+
 const routes = [
   {
     path: '/',
@@ -18,8 +19,8 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component:Contact
-  }
-
+  },
+  
 ]
 
 const router = createRouter({
