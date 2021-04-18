@@ -35,11 +35,17 @@ export default {
   color: #2c3e50;
 }
 
-body {
-  background-color:  #eddcd2 ;
+#nav a.router-link-exact-active {
+  color: black;
 }
 
-#nav a.router-link-exact-active {
-  /* color: #42b983; */
+#nav a.router-link-exact-active:hover {
+  color: black;
 }
+
+body {
+  background-color: #eddcd2;
+}
+
+
 </style>
