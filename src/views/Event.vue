@@ -41,31 +41,29 @@
       </div>
     </form>
 
-    <!-- delete -->
+
     <div
-      class="container grid grid-cols-4 gap-10 place-items-center my-6 mx-auto px-4 pt-10"
+      class="container grid lg:grid-cols-3 sm:grid-cols-1 item-center my-6 mx-auto px-4 pt-10"
     >
       <div class="list" v-for="result in AddEventShow" :key="result.id">
-        <div class="bg-gray-50 rounded-2xl p-5">
+        <div class="bg-gray-50 rounded-2xl p-5 mx-10 lg:w-80 mt-5 item-start">
           <div class="text-gray-900">
-            <h2 class="text-center pb-2 text-red-900 text-lg font-extrabold">
-              Event
-            </h2>
+            <h2 class="text-center pb-2 text-brown-dark text-lg font-extrabold "> Event </h2>
             <h3 class=""></h3>
-            <p class="pb-2">
-              <span class="font-semibold text-red-800"> Title:</span>
+            <p class="pb-2 text-left ">
+              <span class="font-black text-green-darkgreen  "> Title: </span>
               {{ result.title }}<br />
-              <span class="font-semibold text-red-800"> Description: </span
-              >{{ result.description }}<br />
+              <span class="font-black text-green-darkgreen "> Description: <br /> </span> 
+              {{ result.description }} 
             </p>
             <button
-              class="focus:outline-none font-semibold text-red-900 hover:text-white hover:bg-red-900 border-2 border-red-900 rounded-full w-20 h-7 mr-10"
+              class="focus:outline-none font-semibold text-brown-dark hover:text-white hover:bg-brown-dark border-2 border-brown-dark rounded-full w-20 h-7 mr-10"
               @click="deleteEvent(result.id)"
             >
               delete
             </button>
             <button
-              class="focus:outline-none font-semibold text-red-900 hover:text-white hover:bg-red-900 border-2 border-red-900 rounded-full w-20 h-7"
+              class="focus:outline-none font-semibold text-brown-dark hover:text-white hover:bg-brown-dark border-2 border-brown-dark rounded-full w-20 h-7"
               @click="editSurvey"
             >
               edit
@@ -75,11 +73,11 @@
           <!-- edit -->
           <form @submit="editSubmit(result)" v-if="isEdit">
             <h2
-              class="text-red-900 text-center text-lg font-extrabold pb-2 py-5"
+              class="text-brown-dark text-center text-lg font-extrabold pb-2 py-5"
             >
               Edit Event
             </h2>
-            <label class="text-red-900 font-semibold" for="title"> </label>
+            <label class="text-brown-darkfont-semibold" for="title"> </label>
             <input
               class="text-black bg-gray-200 rounded-lg text-sm w-auto focus:outline-none py-0.5 pl-3"
               id="title"
@@ -89,7 +87,7 @@
               required
             />
             <h2
-              class="text-red-900 text-sm py-2 font-semibold"
+              class="text-brown-dark text-sm py-2 font-semibold"
               for="description"
             >
               Details about the activity.
@@ -103,7 +101,7 @@
               required
             />
             <button
-              class="float-right focus:outline-none btn text-sm bg-red-900 text-white rounded-2xl shadow px-3 py-2 my-1"
+              class="float-right focus:outline-none btn text-sm bg-brown-dark text-white rounded-2xl shadow px-3 py-2 my-1"
               :class="w - 20"
             >
               edit submit

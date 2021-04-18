@@ -2,7 +2,7 @@
   <h3 class="text-brown-dark text-3xl font-black">| News</h3>
   <div
     class="bg-cream-light border-solid border-opacity-75 rounded-lg mx-20 mt-4">
-    <div class="flex flex-initial grid grid-cols-4">
+    <div class=" flex-initial grid grid-cols-4">
       <div class="container box-content h-50 w-auto overflow-hidden border bg-green-light bg-opacity-95 rounded-lg shadow p-4 m-5">
         <div class="font-bold text-left text-sm">
           Jonah Marais & Daniel Seavey Speak On The Future Of The Band, New

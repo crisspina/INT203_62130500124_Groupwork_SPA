@@ -1,5 +1,5 @@
 <template>
-    <h1>The event4</h1>
+   <div class="logo mt-10 mb-5">The event4</div>
     <box>
       <h1 class="text-green-darkgreen text-3xl font-bold">Contact Us</h1>
       <div class="text-green-darkgreen font-bold">
@@ -28,5 +28,16 @@ export default {
   },
 };
 </script>
+<style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.logo {
+  font-family: 'Dancing Script' ;
+  font-size: 70px;
+  color: #6b705c;
+  font-weight: 600 ;
+}
+
+</style>
 
 
